@@ -1,0 +1,77 @@
+|contadorcuadriculas
+a7 <= contador_de_cuadriculas:inst.a7
+sensor => contador_de_cuadriculas:inst.sensor
+clock => contador_de_cuadriculas:inst.clock
+rst => contador_de_cuadriculas:inst.rst
+a6 <= contador_de_cuadriculas:inst.a6
+a5 <= contador_de_cuadriculas:inst.a5
+a4 <= contador_de_cuadriculas:inst.a4
+a3 <= contador_de_cuadriculas:inst.a3
+a2 <= contador_de_cuadriculas:inst.a2
+a1 <= contador_de_cuadriculas:inst.a1
+a0 <= contador_de_cuadriculas:inst.a0
+
+
+|contadorcuadriculas|contador_de_cuadriculas:inst
+sensor => process_0.IN1
+sensor => sensor_ant.DATAB
+clock => sensor_ant.CLK
+clock => a0~reg0.CLK
+clock => a1~reg0.CLK
+clock => a2~reg0.CLK
+clock => a3~reg0.CLK
+clock => a4~reg0.CLK
+clock => a5~reg0.CLK
+clock => a6~reg0.CLK
+clock => a7~reg0.CLK
+clock => count1[0].CLK
+clock => count1[1].CLK
+clock => count1[2].CLK
+clock => count1[3].CLK
+clock => count1[4].CLK
+clock => count1[5].CLK
+clock => count1[6].CLK
+clock => count1[7].CLK
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+clock => count[5].CLK
+clock => count[6].CLK
+clock => count[7].CLK
+rst => a0~reg0.ALOAD
+rst => a1~reg0.ALOAD
+rst => a2~reg0.ALOAD
+rst => a3~reg0.ALOAD
+rst => a4~reg0.ALOAD
+rst => a5~reg0.ALOAD
+rst => a6~reg0.ALOAD
+rst => a7~reg0.ALOAD
+rst => count1[0].ALOAD
+rst => count1[1].ALOAD
+rst => count1[2].ALOAD
+rst => count1[3].ALOAD
+rst => count1[4].ALOAD
+rst => count1[5].ALOAD
+rst => count1[6].ALOAD
+rst => count1[7].ALOAD
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => sensor_ant.ENA
+a7 <= a7~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a6 <= a6~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a5 <= a5~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a4 <= a4~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= a3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a1 <= a1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a0 <= a0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
